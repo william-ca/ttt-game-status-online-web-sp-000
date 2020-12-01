@@ -54,3 +54,14 @@ def over?(board)
     false
   end
 end
+
+def winner?(board)
+  if win_combination.detect "X"
+    return "X"
+  elsif win_combination.detect "O"
+    return "O"
+  else
+    return nil
+  end
+end
+
